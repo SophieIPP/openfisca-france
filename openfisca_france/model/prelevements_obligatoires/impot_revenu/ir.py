@@ -2010,7 +2010,7 @@ class defncn(Variable):
         return period, min_(
             f5ht + f5it + f5jt + f5kt + f5lt + f5mt,
             abat_rpns(mncn_impo, specialbnc.services) + mncn_pvct + cncn_aimp + (1 + cga) * cncn_bene
-            )  # TODO check !
+            )  # TODO check !
 
 
 class defmeu(Variable):
@@ -2210,7 +2210,7 @@ class rnc(Variable):
     url = "http://www.impots.gouv.fr/portal/dgi/public/professionnels.impot?espId=2&pageId=prof_bnc&impot=BNC&sfid=50"
     set_input = set_input_divide_by_period
 
-    # Commented out for use with taxipp
+    # Commented out for use with taxipp
     # def function(self, simulation, period):
     #     '''
     #     Revenus non commerciaux individuels
@@ -2469,7 +2469,7 @@ class rpns_individu(Variable):
 
         # # E revenus non commerciaux non professionnels
         # regime déclaratif special ou micro-bnc
-        mncn_timp = abat_rpns(mncn_impo, micro.specialbnc.services)  # TODO check
+        mncn_timp = abat_rpns(mncn_impo, micro.specialbnc.services)  # TODO check
 
         # régime de la déclaration controlée
         # total 11
@@ -2478,7 +2478,7 @@ class rpns_individu(Variable):
 
         # # D revenus non commerciaux professionnels
         # regime déclaratif special ou micro-bnc
-        mbnc_timp = abat_rpns(mbnc_impo, micro.specialbnc.services)  # TODO check
+        mbnc_timp = abat_rpns(mbnc_impo, micro.specialbnc.services)  # TODO check
 
         # regime de la déclaration contrôlée bénéficiant de l'abattement association agréée
         abnc_timp = abnc_impo - abnc_defi
